@@ -42,7 +42,7 @@ function main(yourChoice){
         winorlose = "it's a draw"
     }
     else if(number == 1 && randomPick == 2 || number == 2 && randomPick == 3 || number == 3 && randomPick == 1){
-        winorlose = "Computer won!, you sore loser"
+        winorlose = "Computer won!"
     }
     else if(number == 1 && randomPick == 3 ||number == 2 && randomPick == 1 ||number == 3 && randomPick == 2){
         winorlose = "You won!"
@@ -59,6 +59,3 @@ message.innerHTML = "<h1 id = 'id'>"+winorlose+"</h1>";
 }
 
 
-let randomPick = Math.round(Math.random() * 2 + 1)
-
-console.log(randomPick)
